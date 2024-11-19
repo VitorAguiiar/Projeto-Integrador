@@ -1,0 +1,56 @@
+.funmain{
+    display: flex;
+    width: 1163px ;
+    height: 685px;
+    background-color: white;
+    margin-left: 320px;
+    border: 1px solid black;
+    border-color: black;
+}
+
+.registroaluno{
+    display: inline;
+    height: 83px;
+    width: 1163px;
+    border-bottom: 2px solid #44556F;
+
+}
+
+#logo2{
+    width: 70px;  
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 35px;
+    margin-top: 7px;
+}
+
+.funmain table{
+   width: 200px;
+   height: 100%;
+   text-align: center;
+   
+}
+
+#alterar{
+    width: 35px;
+    padding-bottom: 15px;
+    
+}
+#alterar2{
+    padding-left: 10px;
+    width: 25px;
+    padding-bottom: 15px;
+    
+}
+.funmain table tr td{
+    font-size: 30px;
+    margin-bottom: 500px;
+    
+}
+.funmain .editar{
+margin-left: 700px;
+
+
+
+}
+
