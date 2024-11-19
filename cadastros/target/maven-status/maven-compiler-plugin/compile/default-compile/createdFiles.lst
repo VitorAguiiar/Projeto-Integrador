@@ -1,8 +1,0 @@
-com\aluno\cadastros\CadastrosApplication.class
-com\aluno\cadastros\repository\AlunoImagemRepository.class
-com\aluno\cadastros\service\AlunoService.class
-com\aluno\cadastros\controller\AlunoController.class
-com\aluno\cadastros\model\AlunoModel.class
-com\aluno\cadastros\repository\AlunoRepository.class
-com\aluno\cadastros\dto\AlunoDto.class
-com\aluno\cadastros\model\AlunoImgModel.class
