@@ -1,0 +1,205 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; 
+  width: 100%;  
+  box-sizing: border-box;
+}
+
+
+.container {
+  height: 100%; 
+  width: 100%;  
+  padding: 9px; 
+  box-sizing: border-box; 
+  margin: 0; 
+  display: block;  
+  font-size: clamp(1em, 1em + 1vw, 1.25em); 
+  
+}
+  
+  @media (max-width: 480px) {
+    .container ::before{
+      
+      width: 100%;
+      height: auto;
+      padding: 9px; 
+      
+    
+  }
+.funheader{ 
+    width: 245px;
+    height: 87px;
+    margin: 2%;
+    font-size: clamp(1em, 1em + 1vw, 1.25em);
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin: 6%;
+    border-radius: 50%;
+}
+.titulo h1 { 
+    margin-top: 10px;
+  }     
+
+
+aside { /*aside*/
+  display: inline-block;
+  width: 100%;
+  margin-left: 13px;
+  
+}
+.tabela {
+  width: 100%; 
+  border: 1px solid white; 
+  border-collapse: collapse; 
+
+}
+
+.tabela h1, .tabela h2, .tabela h3 {
+  margin: 0;
+  padding: 1px;
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-left: 12px;
+
+}
+.tabela h3{
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.funmain table {
+    width: 100%;
+    height: auto;
+    
+  }
+.email{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+.foto_aluno img{
+  width: 35px;
+  height: 35px;
+}
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.container {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+.container aside,
+.container main .funmain,
+.container footer {
+  width: 98%; 
+  box-sizing: border-box; 
+  padding: 10px; 
+}
+
+.funmain .tabela {
+  width: 100%; 
+  height: 100%; 
+  
+
+}
+
+  
+.funmain tbody {
+  height: 100%; 
+  width: 100%;  
+  box-sizing: border-box; 
+  background-color: white; 
+  
+
+}
+.funmain .tabela tr {
+  height: 15px; 
+  width: 54px;
+
+}
+
+.funmain th {
+  font-size: 10px; 
+  font-family: "Inter", sans-serif;
+  padding-right: 5px;
+  border-right: 1px solid #7196DA  ; 
+  text-align: center; 
+  width: 67px;
+  
+}
+
+.excluir img{
+  margin-left: 0px;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+}
+.editar img{
+  margin: 0px;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+}
+.excluir {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+footer{
+  right: auto;
+  margin-left: 55px;
+  margin-bottom: 60px;
+}
+
+}
+
+@media (max-width: 1024px)  {
+  .container ::before {
+    
+    padding: 30px; 
+    width: 100%;
+    height: 100%;
+   
+  }
+  main, .funmain {
+    flex-grow: 1; 
+    width: 100%;  
+    box-sizing: border-box;
+    padding: 10px; 
+  }
+  aside{
+    margin-left: 5px;
+    margin-bottom: 30px;
+    margin-right: -20px;
+  }
+ .tabela{
+    padding-left: 10px;
+ }
+    .tabela h1{
+      margin-right: 10px;
+    }
+    .tabela h2{
+      margin-right: 15px;
+    }
+
+  
+}
