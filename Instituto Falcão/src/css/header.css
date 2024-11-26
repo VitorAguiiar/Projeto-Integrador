@@ -1,0 +1,38 @@
+.funheader{
+    display:flex ;
+    width: 400px ;
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #7196DA;
+    border-radius: 15px;
+}
+.logo{
+    width: 70px;  
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+    margin-left: 35px;  
+    margin-right: -75PX; 
+}
+
+.titulo{
+    display:block;
+    margin: auto;
+}
+
+.titulo h1{
+    font-family: "Inter", sans-serif;
+    font-size: 38px;
+    margin-top: 5px;
+}
+.titulo h2{
+    font-family: "Roboto Slab", serif;
+    font-size: 35px;
+    color: white;
+    margin-top: -10px;
+    
+}
