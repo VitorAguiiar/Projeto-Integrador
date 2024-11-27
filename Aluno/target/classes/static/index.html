@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+
+    <form id="produtoForm">
+        <input type="text" id="nome" placeholder="Nome do Produto" required>
+		<input type="file" id="imageInput" accept="image/*">
+        <input type="url" id="imagemUrl" placeholder="URL da Imagem" required>
+        <button type="submit">Adicionar Produto</button>
+    </form>
+
+    <h2>Lista de Produtos</h2>
+    <ul id="produtosList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
