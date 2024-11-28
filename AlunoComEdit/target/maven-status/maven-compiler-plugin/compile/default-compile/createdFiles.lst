@@ -1,0 +1,6 @@
+com\example\demo\DemoApplication.class
+com\example\demo\aluno\Controller.class
+com\example\demo\aluno\Repository.class
+com\example\demo\aluno\DTO.class
+com\example\demo\aluno\Aluno.class
+com\example\demo\aluno\AlunoImagemService.class

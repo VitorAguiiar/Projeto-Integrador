@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+	<link rel="stylesheet" href="style.css" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+	<h1>Cadastro de Aluno</h1>
+	<!-- Formulário para adicionar aluno -->
+		<form id="alunoForm">
+		    <input type="text" id="user" placeholder="Nome">
+		    <input type="text" id="telefone" placeholder="Telefone">
+		    <input type="email" id="email" placeholder="Email">
+		    <input type="text" id="imagemUrl" placeholder="URL da Imagem">
+		    <button type="submit">Salvar</button>
+		</form>
+	
+	
+	<!-- Modal para editar aluno -->
+	<div id="editModal" class="modal">
+	    <div class="modal-content">
+	        <span class="close">&times;</span>
+	        <h2>Editar Aluno</h2>
+	        <form id="editAlunoForm">
+	            <input type="text" id="editUser" placeholder="Nome">
+	            <input type="text" id="editTelefone" placeholder="Telefone">
+	            <input type="email" id="editEmail" placeholder="Email">
+	            <input type="text" id="editImagemUrl" placeholder="URL da Imagem">
+	            <button type="submit">Salvar</button>
+	        </form>
+	    </div>
+	</div>
+	
+	
+	<h2>Lista de Alunos</h2>
+    <ul id="alunoList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
