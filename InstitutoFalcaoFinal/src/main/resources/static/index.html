@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+    <div class="funheader">
+        <img class="logo" src="imagens/aguia.svg" alt="Logo instituto Falcão">
+         <div class="titulo">
+        <h1>Instituto</h1>
+        <h2>Falcão</h2>
+</div>     
+</div>
+</header>
+	
+	<!-- Formulário para adicionar aluno -->
+		<form id="alunoForm">
+		    <input type="text" id="user" placeholder="Nome">
+		    <input type="tel" id="telefone" placeholder="(XX)XXXXXXXXX">
+		    <input type="email" id="email" placeholder="Email">
+		    <input type="text" id="imagemUrl" placeholder="URL da Imagem">
+		    <button type="submit">Salvar</button>
+		</form>
+	
+	
+	<!-- Modal para editar aluno -->
+	<div id="editModal" class="modal">
+	    <div class="modal-content">
+	        <span class="close">&times;</span>
+	        <h2>Editar Aluno</h2>
+	        <form id="editAlunoForm">
+	            <input type="text" id="editUser" placeholder="Nome">
+	            <input type="tel" id="editTelefone" placeholder="">
+	            <input type="email" id="editEmail" placeholder="Email">
+	            <input type="text" id="editImagemUrl" placeholder="URL da Imagem">
+	            <button type="submit">Salvar</button>
+	        </form>
+	    </div>
+	</div>
+	
+	<div class="lista">
+	<h2>Lista de Alunos</h2>
+    </div>
+    <ul id="alunoList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

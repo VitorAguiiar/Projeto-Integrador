@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/* Estilo para o Modal */
+.modal {
+    display: none; /* Escondido por padrão */
+	justify-content: center;  /* Centraliza o modal horizontalmente */
+	align-items: center;      /* Centraliza o modal verticalmente */
+    position: fixed;
+	background: linear-gradient(to right, #66b3ff, #142a6d); /* Gradiente de fundo atrás do modal */
+    z-index: 1; /* Fica acima do conteúdo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); /* Fundo semitransparente */
+    overflow: auto;
+    border-radius: 5px;
+    padding-top: 60px; /* Ajuste da altura do modal para telas grandes */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 3px solid #60a5fa;
+    width: 80%; /* Largura do modal */
+    max-width: 500px;
+    border-radius: 15px; /* Bordas arredondadas para a caixa do modal */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+    overflow-y: auto; /* Garante que o conteúdo não saia da tela */
+}
+
+/* Estilo para centralizar o título "Editar Aluno" */
+.modal-content h2 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 24px;    /* Ajuste o tamanho da fonte se necessário */
+    margin-bottom: 20px; /* Adiciona um espaço abaixo do título */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para o formulário de edição */
+#editAlunoForm {
+    display: flex;
+    flex-direction: column; /* Organiza os inputs em coluna */
+    gap: 15px; /* Espaçamento entre os campos */
+    width: 100%;
+    max-width: 500px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Estilo para os inputs */
+#editAlunoForm input {
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 15px; /* Bordas arredondadas para os inputs */
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+    font-family: "Roboto", sans-serif;
+}
+
+#editAlunoForm input:focus {
+    border-color: #60a5fa; /* Cor de borda ao focar */
+    outline: none;
+}
+
+/* Responsividade para dispositivos móveis e tablets */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* O modal ocupa 90% da tela */
+        margin: 10% auto; /* Ajusta a margem para centralizar melhor */
+        padding: 15px; /* Reduz o padding */
+    }
+
+    .modal {
+        padding-top: 50px; /* Ajusta o padding superior para telas pequenas */
+    }
+
+    #editAlunoForm {
+        width: 100%; /* O formulário ocupa toda a largura disponível */
+        padding: 10px; /* Ajuste de padding para o formulário */
+    }
+
+    #editAlunoForm input, #editAlunoForm button {
+        font-size: 14px; /* Ajuste de tamanho da fonte para melhor visualização */
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%; /* O modal ocupa quase toda a largura da tela */
+        padding: 12px; /* Ajuste o padding para não ficar apertado */
+    }
+
+    .modal {
+        padding-top: 40px; /* Ajusta o padding superior para telas muito pequenas */
+    }
+
+    #editAlunoForm input, #editAlunoForm button {
+        font-size: 12px; /* Ajuste de tamanho da fonte */
+    }
+
+    .close {
+        font-size: 22px; /* Ajuste o tamanho do ícone de fechar */
+    }
+}
+
+/* Estilos gerais */
+.funheader {
+    display: flex;
+    width: 400px;
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #7196DA;
+    border-radius: 15px;
+}
+.logo {
+    width: 70px;  
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+    margin-left: 35px;  
+    margin-right: -75px; 
+}
+.titulo {
+    display: block;
+    margin: auto;
+}
+.titulo h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 38px;
+    margin-top: 5px;
+}
+.titulo h2 {
+    font-family: "Roboto Slab", serif;
+    font-size: 35px;
+    color: white;
+    margin-top: -10px;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 200vh;
+    background:linear-gradient(to right, #66b3ff, #142a6d);
+    background-attachment: fixed;
+}
+
+.lista h2 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #60A5FA;
+    transition: background-color 0.3s;
+}
+
+form {
+    text-align: center;
+}
+
+form input {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+input:focus {
+    border-color: #7196DA;
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#alunoList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#alunoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#alunoList li img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+#alunoList li .info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+}
+/* Estilo para a lista de alunos */
+#alunoList li .info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+    max-width: 100%;
+    overflow: hidden; /* Garante que o conteúdo extra será ocultado */
+}
+
+/* Para todos os campos dentro da lista (nome, telefone, email) */
+#alunoList li .info span,
+#alunoList li .info strong {
+    white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden;    /* Esconde o conteúdo extra */
+    text-overflow: ellipsis; /* Adiciona os "..." quando o conteúdo for cortado */
+}
+
+/* Para dispositivos móveis (até 480px) - Limite de 7 caracteres */
+@media (max-width: 480px) {
+    #alunoList li .info strong,
+    #alunoList li .info span {
+        max-width: 50px; /* Limita o tamanho do nome e outros campos */
+    }
+}
+
+/* Para tablets (até 768px) - Limite de 12 caracteres */
+@media (max-width: 768px) {
+    #alunoList li .info strong,
+    #alunoList li .info span {
+        max-width: 200px; /* Limita o tamanho do nome e outros campos */
+    }
+}
+/* Estilo para a área de ações dentro de cada item da lista */
+#alunoList li .actions {
+    display: flex; /* Alinha os itens na horizontal */
+    gap: 10px; /* Espaço entre os botões */
+    justify-content: flex-start; /* Garante que os botões fiquem alinhados à esquerda */
+    align-items: center; /* Alinha os botões verticalmente */
+}
+
+/* Estilo para o botão de editar */
+#alunoList li .actions button {
+    padding: 12px;
+    background-color: #60A5FA; /* Cor azul */
+    color: white;
+    border: none;
+    border-radius: 15px; /* Bordas arredondadas */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Garante que o botão tenha o comportamento correto */
+}
+
+#alunoList li .actions button:hover {
+    background-color: #142a6d; /* Cor de hover (escura) */
+}
+
+/* Estilo para o botão de deletar */
+#alunoList li .actions a {
+    padding: 12px;
+    background-color: #f44336; /* Cor vermelha */
+    color: white;
+    text-decoration: none;
+    border-radius: 15px; /* Bordas arredondadas */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Garante que o link se comporte como botão */
+}
+
+#alunoList li .actions a:hover {
+    background-color: #d32f2f; /* Cor de hover (escura) */
+}
